@@ -38,16 +38,5 @@ namespace AuthServer
                 Claims = new[] {new Claim("permcl", "true", ClaimValueTypes.Boolean)}
             };
         }
-
-
-        public static IEnumerable<TestUser> GetUsers()
-        {
-            yield return new TestUser
-            {
-                SubjectId = "1",
-                Username = "user1",
-                Password = "p@ss"
-            };
-        }
     }
 }

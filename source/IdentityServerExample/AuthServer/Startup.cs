@@ -44,7 +44,6 @@ namespace AuthServer
                 .AddDeveloperSigningCredential(Path.Combine(keyDir, "keys.rsa"))
                 .AddInMemoryApiResources(IdentityServerConfig.GetApiResources())
                 .AddInMemoryClients(IdentityServerConfig.GetClients())
-                .AddTestUsers(IdentityServerConfig.GetUsers().ToList())
                 .AddProfileService<ProfileService>()
                 .AddResourceOwnerValidator<PasswordValidator>();
 
